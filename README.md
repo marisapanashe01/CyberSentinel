@@ -1,108 +1,208 @@
-# CyberSafe Youth Initiative
+# CyberSafe Youth Initiative  
+## Cybersecurity Lab Documentation: Password Security Awareness
+## Terminal startup
 
-### Password Security Awareness and Research Project
+![CyberSentinel terminal startup screen](assets/images/terminal-start-1.png)
 
-**CyberSafe Youth Initiative** is an early-stage cybersecurity research and education project focused on password security awareness and responsible digital citizenship.
+*The terminal when the application first starts.*
 
-The project includes the development of **CyberSentinel**, an educational software prototype intended to help users explore password security in a controlled, authorized environment. The wider initiative aims to make cybersecurity concepts more accessible to young people and communities.
+![CyberSentinel terminal startup screen showing the next step](assets/images/terminal-start-2.png)
 
-> **Project status:** Early development. The prototype and future capabilities are still evolving. Features described as planned are not yet implemented.
+*The next screen in the startup process.*
+## 1. Lab overview
 
-## Background
+**CyberSafe Youth Initiative** is an early-stage cybersecurity research and education project focused on password security awareness and responsible online practices.
 
-Digital services are part of everyday life, making the protection of online accounts and personal information increasingly important. Weak or reused passwords and limited awareness of security practices can put digital identities at risk.
+The initiative includes a technical prototype, **CyberSentinel**, intended to support learning about password security in a controlled environment. The project’s educational goal is to help participants understand why password practices matter and how to protect their digital identities.
 
-Young people are active participants in the digital world and can help promote safer online habits. CyberSafe Youth Initiative explores how practical tools and accessible education can support that role.
+This documentation covers the **cybersecurity lab** aspect of the initiative: its purpose, learning goals, safe scope, described prototype behavior, and possible future research. It is not a software architecture or installation guide.
 
-## Project overview
+## 2. Background and challenge
 
-The initiative combines two related goals:
+Digital services are widely used for communication, learning, work, and daily activities. As a result, people increasingly rely on accounts to protect personal and organizational information.
 
-- **Cybersecurity education:** Make password security concepts easier to understand and encourage safer online practices.
-- **Software research:** Develop CyberSentinel as an educational password-security assessment prototype for controlled and authorized environments.
+Weak or reused passwords, combined with limited security awareness, can increase the risk of account compromise. People may not know what makes a password risky, how to use password managers, or why multi-factor authentication is valuable.
 
-The project is intended for learning and research—not unauthorized access. Its purpose is to help people understand password security risks and the importance of strong authentication practices.
+Young people are active participants in the digital environment and can help promote safer online practices. This lab explores how a practical, ethical demonstration can make password-security concepts easier to understand.
 
-## Current development
+## 3. Purpose of the lab
 
-The project is in an early development stage. Based on the work described so far, the prototype has explored:
+The lab is intended to support research and education by exploring password-security concepts in a controlled setting. Its objectives are to:
 
-- Reading password entries from a text-based dictionary file.
-- Selecting whether to use original entries or generated variations.
-- Testing authentication behavior in an authorized environment.
-- Reporting the outcome of an attempt.
+- Introduce common password-security risks.
+- Encourage stronger authentication habits.
+- Help learners understand how password testing should be conducted ethically.
+- Explore how a small technical prototype can support cybersecurity education.
+- Encourage responsible participation and collaboration in cybersecurity.
 
-The current source code should be reviewed to confirm which functions are implemented and working. In particular, the original-password option has previously required troubleshooting, so it should not be described as reliable until it has been tested.
+The project is **educational**, not intended to access accounts or systems without permission.
 
-## Future direction
+## 4. Project and prototype history
 
-Future research may explore how CyberSentinel can provide more useful password-security education and analysis. Possible directions include:
+The project has developed through several stages:
 
-- Explaining common password weaknesses in an accessible way.
-- Providing recommendations for stronger authentication practices.
-- Improving validation, error handling, and reporting.
-- Exploring AI-assisted analysis of password-security findings.
-- Developing educational materials or demonstrations for students and community groups.
+1. **Initial cybersecurity concept**  
+   The early project description considered a broad set of cybersecurity ideas, including password security, monitoring, and potential AI use.
 
-The broader CyberSentinel concept may also explore defensive security monitoring, such as reviewing authorized authentication or network logs for unusual activity. This is a longer-term direction and is separate from the prototype’s current password-security focus.
+2. **Password-security prototype**  
+   The technical work was later described as a C# terminal-based prototype that reads password candidates from a text file and offers an option to use original entries or variations.
 
-## How AI may contribute
+3. **Remote authentication testing described**  
+   Earlier descriptions mentioned testing authentication against SSH or FTP services. This behavior has not been verified against the current repository. If present, it must be restricted to an isolated lab or a system for which explicit authorization has been granted.
 
-AI is a future research area for the project, not a claim about a feature that is already implemented. Possible educational and defensive uses include:
+4. **Education and research framing**  
+   The work was presented as the **CyberSafe Youth Initiative — Password Security Awareness and Research Project**, emphasizing awareness, ethical testing, and youth participation.
 
-- Helping explain why a password or authentication practice may be risky.
-- Organizing security findings into clear, understandable summaries.
-- Suggesting general improvements to password and account-protection habits.
-- In a later monitoring-focused phase, helping analysts review authorized security events and draft reports based on evidence.
+5. **Future AI research**  
+   AI-assisted analysis and recommendations were proposed as possible future directions. No AI capability has been confirmed as implemented.
 
-Any AI-generated analysis should be treated as assistance, not as a definitive security judgment. Findings should be explainable, reviewed by a person, and connected to the evidence that informed them.
+## 5. What the prototype is described as doing
 
-## My role
+Based on the project description, the prototype has been described as being able to:
 
-As the project initiator, I am responsible for:
+- Read candidate entries from a dictionary text file.
+- Let a user choose whether to use original entries or generated variations.
+- Test authentication against SSH or FTP services, if that functionality is present.
+- Report outcomes or errors in the terminal.
+- Potentially record results or send an email notification, if those features are implemented.
 
-- Researching password security and cybersecurity education.
-- Designing and developing the assessment-tool prototype.
-- Exploring ways to communicate security concepts accessibly.
-- Considering responsible and appropriate applications of AI.
-- Seeking opportunities to learn from and collaborate with other young innovators.
+These are **described or proposed behaviors**, not independently verified features. Check the current source code and test results before marking any of them as implemented.
 
-## Expected impact
+### Important distinction
 
-CyberSafe Youth Initiative aims to help students, young professionals, and communities build a better understanding of password security and responsible online behavior.
+A tool that tries candidate passwords against a remote service is performing **authentication testing**. That is different from an offline password-strength demonstration. Remote testing can affect real accounts and services, so it must only occur in a controlled, explicitly authorized environment.
 
-The project also aims to encourage knowledge sharing and collaboration among young people interested in cybersecurity, technology, and digital innovation. Its intended contribution is both educational and technical: helping people make more informed security choices while learning how responsible cybersecurity tools are developed.
+## 6. Lab scope and safety boundaries
 
-## Global collaboration
+### In scope
 
-Through opportunities such as the **World Internet Conference Global Youth Community**, I hope to exchange ideas with young innovators from different countries and learn from a range of perspectives on cybersecurity and digital development.
+- Learning about password security and authentication.
+- Reviewing how password candidates are handled in a local, controlled exercise.
+- Using fictional or test-only data.
+- Testing only in an isolated environment with explicit authorization.
+- Discussing defensive practices such as unique passwords, password managers, and multi-factor authentication.
 
-Cybersecurity challenges cross borders, and addressing them requires cooperation. By sharing knowledge, developing responsible solutions, and supporting youth participation in technology, the initiative hopes to contribute to a safer, more trusted, and inclusive cyberspace.
+### Out of scope
 
-## Responsible use
+- Testing passwords against accounts, services, or networks without permission.
+- Using real people’s credentials or personal data.
+- Testing public-facing services or third-party systems.
+- Presenting a successful authentication attempt as proof that a system is secure.
+- Treating unverified tool output as a definitive security finding.
 
-CyberSentinel is intended for education, research, and authorized testing only. Use it only in environments you own or have explicit permission to assess. Do not use the project to attempt access to another person’s account, device, service, or network.
+**Recommended project direction:** Keep demonstrations offline where possible. If the current prototype includes remote SSH or FTP authentication attempts, document that clearly, limit it to a dedicated lab, and consider replacing it with offline educational analysis.
 
-The project is a learning prototype and is not a substitute for professional security tools, expert guidance, or an organization’s security procedures.
+## 7. Lab inputs and outputs
 
-## Technology and repository
+The exact terminal prompts and output depend on the current code and should be documented from a test run.
 
-- **Primary language:** C#
-- **Current form:** Early-stage application prototype; confirm the application type and dependencies in the source code.
-- **AI capabilities:** Under consideration for future research; not currently claimed as implemented.
+### Inputs described so far
 
-The repository structure, dependencies, and feature status may change as development continues.
+| Input | Purpose | Status to verify |
+|---|---|---|
+| Username | Identifies the account name used in the prototype | Confirm whether the program requests it |
+| Dictionary text file | Supplies candidate entries | Confirm file format, encoding, and error handling |
+| Original-or-variation choice | Selects how candidates are processed | Confirm the available options and behavior |
+| Connection details | May be needed if remote authentication testing is present | Verify what is requested; do not publish sensitive values |
+| Email configuration | May be needed if notifications are implemented | Confirm whether this feature exists and how secrets are protected |
 
-## Development status
+### Outputs described or proposed
 
-CyberSafe Youth Initiative is currently focused on research, learning, and development of its core prototype. Future plans will be refined as the project is tested and its educational needs become clearer.
+| Output | What it may show | Status to verify |
+|---|---|---|
+| Terminal messages | Progress, completion, errors, or results | Capture the actual messages |
+| Result or error records | Outcomes of processing or testing | Confirm whether files are written and what they contain |
+| Email notifications | Possible notification of a reported result | Confirm implementation and data included |
+| Educational recommendations | Possible future explanations or guidance | Planned unless present in the code |
 
-Please distinguish between:
+Do not place real passwords, account details, network addresses, or secrets in documentation examples.
+
+## 8. Safe illustrative code excerpts
+
+The following examples show **safe, offline educational processing**. They are not copied from the repository and do not attempt to authenticate to any service.
+
+### Example A: Read a local text file and count entries
+
+```csharp
+string[] entries = File.ReadAllLines(filePath);
+
+int nonEmptyCount = entries.Count(line => !string.IsNullOrWhiteSpace(line));
+
+Console.WriteLine($"Entries read: {entries.Length}");
+Console.WriteLine($"Non-empty entries: {nonEmptyCount}");
+```
+
+This example reads a local file and reports basic counts. It does not display or transmit the entries, and it does not test them against an account or service.
+
+### Example B: Report a privacy-conscious summary
+
+```csharp
+Console.WriteLine("Local review complete.");
+Console.WriteLine($"Entries reviewed: {nonEmptyCount}");
+Console.WriteLine("No passwords are displayed in this summary.");
+```
+
+A summary like this can support an educational exercise while avoiding unnecessary exposure of sensitive values. It should not claim to determine whether an account or system is secure.
+
+## 9. What the lab checks—and what it does not
+
+Based on the description available, the prototype may process candidate strings and report the result of an authentication attempt if remote testing is implemented.
+
+There is no verified evidence that the current project:
+
+- Detects network intrusions.
+- Monitors users or systems for anomalous behavior.
+- Determines whether a password has been exposed in a breach.
+- Conducts a comprehensive password-strength audit.
+- Provides AI-generated security recommendations.
+
+Those capabilities should be described as future research unless they are present in the code and have been tested.
+
+## 10. Learning outcomes
+
+Participants completing a well-scoped version of this lab should be able to:
+
+- Explain why weak or reused passwords can create risk.
+- Identify safer account-protection habits.
+- Distinguish offline password education from remote authentication testing.
+- Explain why authorization and controlled environments matter in cybersecurity.
+- Describe how tools can support learning without replacing security judgment.
+
+## 11. Future research directions
+
+Potential future work includes:
+
+- Creating offline demonstrations that explain password-security concepts without contacting real services.
+- Improving the clarity and privacy of lab results.
+- Developing learning materials for students and community groups.
+- Exploring AI-assisted explanations of security findings.
+- Investigating authorized, defensive analysis of security events as a separate research direction.
+
+### Possible role for AI
+
+AI could eventually help present technical findings in more accessible language or organize information for a human reviewer. Any AI-generated output should be clearly identified as an interpretation, not a confirmed fact. It should be checked against the underlying evidence, and should not automatically make security decisions.
+
+No AI model or AI feature has been confirmed as part of the current implementation.
+
+## 12. Global collaboration and expected impact
+
+Through opportunities such as the **World Internet Conference Global Youth Community**, the initiative aims to exchange ideas with young innovators and learn from different perspectives on cybersecurity and digital development.
+
+Cybersecurity challenges cross borders. The project hopes to contribute to safer digital practices through knowledge sharing, responsible research, and greater youth participation in technology.
+
+## 13. Documentation status labels
+
+When describing the project in the repository, use these labels consistently:
 
 - **Implemented:** Present in the code and tested for the stated use.
-- **In development:** Being actively built or evaluated.
+- **In development:** Actively being built or evaluated.
 - **Planned:** A possible future direction.
+- **Unverified:** Mentioned in project descriptions but not checked against the current code.
 
-## Disclaimer
+This distinction helps keep the lab documentation accurate as the project evolves.
 
-This project is provided for educational and research purposes. It is an evolving prototype, may contain errors, and should not be relied on as a production security product. Users are responsible for obtaining authorization and complying with applicable laws, policies, and rules before testing any system.
+## 14. Responsible-use statement
+
+This lab is for education, research, and authorized testing only. Do not use the prototype to attempt access to another person’s account, service, device, or network without explicit permission. Use fictional or test-only data, follow applicable laws and policies, and avoid collecting or sharing sensitive information.
+
+The prototype is an educational project, not a production security product or a substitute for professional security advice.
