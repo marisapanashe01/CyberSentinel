@@ -2,11 +2,13 @@
 ## Cybersecurity Lab Documentation: Password Security Awareness
 ## Terminal startup
 
-![CyberSentinel terminal startup screen](assets/images/terminal-start-1.png)
+![CyberSentinel terminal startup screen](assets/images/Screenshot1.png)
 
 *The terminal when the application first starts.*
 
-![CyberSentinel terminal startup screen showing the next step](assets/images/terminal-start-2.png)
+![CyberSentinel terminal startup screen showing the next step](assets/images/Screenshot2.png)
+
+![CyberSentinel terminal startup screen showing the next step](assets/images/Screenshot3.png)
 
 *The next screen in the startup process.*
 ## 1. Lab overview
@@ -203,6 +205,6 @@ This distinction helps keep the lab documentation accurate as the project evolve
 
 ## 14. Responsible-use statement
 
-This lab is for education, research, and authorized testing only. Do not use the prototype to attempt access to another person’s account, service, device, or network without explicit permission. Use fictional or test-only data, follow applicable laws and policies, and avoid collecting or sharing sensitive information.
+This lab is for education, research, and authorized testing only. Do not use the prototype to attempt access to another person’s account, service, device, or network without explicit permission. Use fictional or test-only data, follow applicable laws and policies, and avoid collecting or sharing sensitive information. This lab was conducted in a safe environment against my own Linux system. 
 
 The prototype is an educational project, not a production security product or a substitute for professional security advice.
